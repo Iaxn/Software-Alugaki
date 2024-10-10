@@ -15,17 +15,16 @@ namespace PrimeiroApp
 {
     public partial class PaginaLogada : Form
     {
+
         bool sideBarExpand;
-       
+
 
 
         private string username; // Campo para armazenar o username
 
-        public PaginaLogada(string ndusuario)
+        public PaginaLogada()
         {
             InitializeComponent();
-
-            
 
             lbmenu.Visible = false;
             btcadastraraluguel.Visible = false;
@@ -33,26 +32,12 @@ namespace PrimeiroApp
             pictureBox3.Visible = false;
             pictureBox4.Visible = false;
 
-            this.username = ndusuario; // Armazena o username
+            
 
-            SqlConnection con = new SqlConnection("Data Source=IAN;Initial Catalog=registrarapp;Integrated Security=True;TrustServerCertificate=True");
-            con.Open();
-            string insertQuery = "SELECT fname FROM register WHERE username = @username";
-            SqlCommand cmd = new SqlCommand(insertQuery, con);
 
-            cmd.Parameters.AddWithValue("@username", username);
-
-            SqlDataReader reader = cmd.ExecuteReader();
-
-            // Se houver resultado, definir o valor na label
-            if (reader.Read())
-            {
-                string fname = reader["fname"].ToString();
-                lbWelcome.Text = "Bem Vindo(a), " + fname;
-                lbidentificador.Text = username;
-            }
         }
 
+        public string NomeUsuario { get; set; }
 
 
 
@@ -174,6 +159,25 @@ namespace PrimeiroApp
         private void sidebar_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void PaginaLogada_Load(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source=IAN;Initial Catalog=registrarapp;Integrated Security=True;TrustServerCertificate=True");
+            con.Open();
+            string insertQuery = "SELECT fname FROM register WHERE username=@username";
+            SqlCommand cmd = new SqlCommand(insertQuery, con);
+
+            cmd.Parameters.AddWithValue("@username", this.NomeUsuario);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                string fname = reader["fname"].ToString();
+                lbWelcome.Text = "Bem Vindo(a), " + fname;
+                lbidentificador.Text = this.NomeUsuario;
+            }
         }
     }
 }

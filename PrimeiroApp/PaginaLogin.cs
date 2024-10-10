@@ -14,13 +14,7 @@ namespace PrimeiroApp
             var nUsuario = txtUser.Text;
         }
 
-        private string _Nome;
-        public string NomeUsuario
-        {
-            get { return _Nome; }
-            set { _Nome = value; }
 
-        }
 
 
         private void Form1_Load(object sender, EventArgs e)
@@ -68,9 +62,9 @@ namespace PrimeiroApp
             con.Close();
             if (count > 0)
             {
-
-                NomeUsuario = txtUser.Text;
-                new PaginaLogada(NomeUsuario).Show();
+                PaginaLogada pagLogada = new PaginaLogada();
+                pagLogada.lbWelcome.Text = txtUser.Text;
+                new PaginaLogada().Show();
                 this.Hide();
 
             }
@@ -115,9 +109,9 @@ namespace PrimeiroApp
             con.Close();
             if (count > 0)
             {
-
-                NomeUsuario = txtUser.Text;
-                new PaginaLogada(NomeUsuario).Show();
+                PaginaLogada pagLogada = new PaginaLogada();
+                pagLogada.NomeUsuario = txtUser.Text;
+                pagLogada.Show();
                 this.Hide();
 
             }
@@ -129,26 +123,7 @@ namespace PrimeiroApp
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=IAN;Initial Catalog=registrarapp;Integrated Security=True;TrustServerCertificate=True");
-            con.Open();
-            string insertQuery = "SELECT COUNT(*) FROM register WHERE username=@username AND password=@password";
-            SqlCommand cmd = new SqlCommand(insertQuery, con);
-            cmd.Parameters.AddWithValue("@username", txtUser.Text);
-            cmd.Parameters.AddWithValue("@password", txtPassword.Text);
-            int count = (int)cmd.ExecuteScalar();
-            con.Close();
-            if (count > 0)
-            {
-
-                NomeUsuario = txtUser.Text;
-                new PaginaLogada(NomeUsuario).Show();
-                this.Hide();
-
-            }
-            else
-            {
-                MessageBox.Show("Falha no login, verifique seu usuario ou senha e tente novamente.", "Erro no login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+           
         }
     }
 }

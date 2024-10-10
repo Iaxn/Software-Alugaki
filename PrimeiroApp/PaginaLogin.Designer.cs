@@ -127,11 +127,11 @@
             label2.FlatStyle = FlatStyle.Popup;
             label2.Font = new Font("Poppins Light", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(173, 283);
+            label2.Location = new Point(86, 283);
             label2.Name = "label2";
-            label2.Size = new Size(44, 22);
+            label2.Size = new Size(215, 22);
             label2.TabIndex = 17;
-            label2.Text = "LOGIN";
+            label2.Text = "                               LOGIN                          ";
             label2.Click += label2_Click;
             // 
             // PaginaLogin
