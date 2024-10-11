@@ -72,6 +72,7 @@
             button3.TabIndex = 26;
             button3.Text = "Página Inicial";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click_1;
             // 
             // btrevisaraluguel
             // 
@@ -183,6 +184,7 @@
             label1.Size = new Size(136, 25);
             label1.TabIndex = 32;
             label1.Text = "Concluir cadastro";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -195,7 +197,7 @@
             label2.Size = new Size(136, 28);
             label2.TabIndex = 32;
             label2.Text = "          Voltar         ";
-
+            label2.Click += label2_Click;
             // 
             // PaginaCadastrarAluguel
             // 

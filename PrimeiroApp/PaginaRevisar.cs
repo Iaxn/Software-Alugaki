@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PrimeiroApp
 {
-    public partial class PaginaLista : Form
+    public partial class PaginaRevisar : Form
     {
-        public PaginaLista()
+        public PaginaRevisar()
         {
             InitializeComponent();
         }

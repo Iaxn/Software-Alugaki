@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using PrimeiroApp;
+using Sessao;
+using static Sessao.SessaoGlobal;
 
 namespace PrimeiroApp
 {
@@ -20,7 +22,7 @@ namespace PrimeiroApp
 
 
 
-        private string username; // Campo para armazenar o username
+
 
         public PaginaLogada()
         {
@@ -32,12 +34,13 @@ namespace PrimeiroApp
             pictureBox3.Visible = false;
             pictureBox4.Visible = false;
 
-            
+
 
 
         }
 
         public string NomeUsuario { get; set; }
+        
 
 
 
@@ -79,6 +82,7 @@ namespace PrimeiroApp
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
+            SessaoUsuario.LimparSessao();
             new PaginaLogin().Show();
             this.Hide();
         }
@@ -163,21 +167,9 @@ namespace PrimeiroApp
 
         private void PaginaLogada_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=IAN;Initial Catalog=registrarapp;Integrated Security=True;TrustServerCertificate=True");
-            con.Open();
-            string insertQuery = "SELECT fname FROM register WHERE username=@username";
-            SqlCommand cmd = new SqlCommand(insertQuery, con);
-
-            cmd.Parameters.AddWithValue("@username", this.NomeUsuario);
-
-            SqlDataReader reader = cmd.ExecuteReader();
-
-            if (reader.Read())
-            {
-                string fname = reader["fname"].ToString();
-                lbWelcome.Text = "Bem Vindo(a), " + fname;
-                lbidentificador.Text = this.NomeUsuario;
-            }
+            lbWelcome.Text = "Bem Vindo(a), " + SessaoUsuario.NomeUsuario;
+            lbidentificador.Text = "ID: " + SessaoUsuario.IdUsuario;
         }
     }
 }
+

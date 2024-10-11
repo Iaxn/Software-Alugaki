@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing.Drawing2D;
 using System.Security.Cryptography.Xml;
+using static Sessao.SessaoGlobal;
 
 namespace PrimeiroApp
 {
@@ -19,7 +20,7 @@ namespace PrimeiroApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -51,28 +52,10 @@ namespace PrimeiroApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            SqlConnection con = new SqlConnection("Data Source=IAN;Initial Catalog=registrarapp;Integrated Security=True;TrustServerCertificate=True");
-            con.Open();
-            string insertQuery = "SELECT COUNT(*) FROM register WHERE username=@username AND password=@password";
-            SqlCommand cmd = new SqlCommand(insertQuery, con);
-            cmd.Parameters.AddWithValue("@username", txtUser.Text);
-            cmd.Parameters.AddWithValue("@password", txtPassword.Text);
-            int count = (int)cmd.ExecuteScalar();
-            con.Close();
-            if (count > 0)
-            {
-                PaginaLogada pagLogada = new PaginaLogada();
-                pagLogada.lbWelcome.Text = txtUser.Text;
-                new PaginaLogada().Show();
-                this.Hide();
-
-            }
-            else
-            {
-                MessageBox.Show("Falha no login, verifique seu usuario ou senha e tente novamente.", "Erro no login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            
         }
+
+        
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
@@ -97,28 +80,35 @@ namespace PrimeiroApp
 
         private void label2_Click(object sender, EventArgs e)
         {
-
-
             SqlConnection con = new SqlConnection("Data Source=IAN;Initial Catalog=registrarapp;Integrated Security=True;TrustServerCertificate=True");
             con.Open();
-            string insertQuery = "SELECT COUNT(*) FROM register WHERE username=@username AND password=@password";
-            SqlCommand cmd = new SqlCommand(insertQuery, con);
+
+
+            string query = "SELECT fname,username FROM register WHERE username=@username AND password=@password";
+            SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@username", txtUser.Text);
             cmd.Parameters.AddWithValue("@password", txtPassword.Text);
-            int count = (int)cmd.ExecuteScalar();
-            con.Close();
-            if (count > 0)
+
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
             {
+                SessaoUsuario.NomeUsuario = reader["fname"].ToString();
+                SessaoUsuario.IdUsuario = reader["username"].ToString();
+                
+
                 PaginaLogada pagLogada = new PaginaLogada();
                 pagLogada.NomeUsuario = txtUser.Text;
+
+
+
                 pagLogada.Show();
                 this.Hide();
-
             }
             else
             {
-                MessageBox.Show("Falha no login, verifique seu usuario ou senha e tente novamente.", "Erro no login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Falha no login, verifique seu usuário ou senha e tente novamente.", "Erro no login", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            con.Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
