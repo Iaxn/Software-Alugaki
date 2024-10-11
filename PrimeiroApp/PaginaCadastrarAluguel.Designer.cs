@@ -88,6 +88,7 @@
             btrevisaraluguel.TabIndex = 27;
             btrevisaraluguel.Text = "Revisar Aluguéis";
             btrevisaraluguel.UseVisualStyleBackColor = false;
+            btrevisaraluguel.Click += btrevisaraluguel_Click;
             // 
             // pictureBox3
             // 
@@ -177,6 +178,7 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(11, 40, 77);
+            label1.Cursor = Cursors.Hand;
             label1.Font = new Font("Poppins Light", 10F);
             label1.ForeColor = Color.White;
             label1.Location = new Point(632, 346);
@@ -190,6 +192,7 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(11, 40, 77);
+            label2.Cursor = Cursors.Hand;
             label2.Font = new Font("Poppins Light", 12F);
             label2.ForeColor = Color.White;
             label2.Location = new Point(293, 344);

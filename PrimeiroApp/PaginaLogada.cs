@@ -30,9 +30,10 @@ namespace PrimeiroApp
 
             lbmenu.Visible = false;
             btcadastraraluguel.Visible = false;
-            btrevisaraluguel.Visible = false;
+            button1.Visible = false;
             pictureBox3.Visible = false;
             pictureBox4.Visible = false;
+            button3.Visible = false;
 
 
 
@@ -40,7 +41,7 @@ namespace PrimeiroApp
         }
 
         public string NomeUsuario { get; set; }
-        
+
 
 
 
@@ -65,6 +66,12 @@ namespace PrimeiroApp
             this.Hide();
         }
 
+        private void btRevisarAluguel(object sender, EventArgs e)
+        {
+            new PaginaRevisar().Show();
+            this.Hide();
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -82,9 +89,7 @@ namespace PrimeiroApp
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
-            SessaoUsuario.LimparSessao();
-            new PaginaLogin().Show();
-            this.Hide();
+           
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -100,14 +105,17 @@ namespace PrimeiroApp
             if (sideBarExpand)
             {
 
-                sidebar.Width -= 10;
+                sidebar.Width -= 20;
+                lbmenu.Visible = false;
+                btcadastraraluguel.Visible = false;
+                button1.Visible = false;
+                pictureBox3.Visible = false;
+                pictureBox4.Visible = false;
+                button3.Visible = false;
+
                 if (sidebar.Width == sidebar.MinimumSize.Width)
                 {
-                    lbmenu.Visible = false;
-                    btcadastraraluguel.Visible = false;
-                    btrevisaraluguel.Visible = false;
-                    pictureBox3.Visible = false;
-                    pictureBox4.Visible = false;
+                    
 
                     sideBarExpand = false;
                     sideBarTimer.Stop();
@@ -120,10 +128,11 @@ namespace PrimeiroApp
                 if (sidebar.Width == sidebar.MaximumSize.Width)
                 {
                     lbmenu.Visible = true;
-                    btrevisaraluguel.Visible = true;
+                    button1.Visible = true;
                     btcadastraraluguel.Visible = true;
                     pictureBox3.Visible = true;
                     pictureBox4.Visible = true;
+                    button3.Visible = true;
 
                     sideBarExpand = true;
                     sideBarTimer.Stop();
@@ -152,6 +161,7 @@ namespace PrimeiroApp
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -169,6 +179,13 @@ namespace PrimeiroApp
         {
             lbWelcome.Text = "Bem Vindo(a), " + SessaoUsuario.NomeUsuario;
             lbidentificador.Text = "ID: " + SessaoUsuario.IdUsuario;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            PaginaRevisar previstar = new PaginaRevisar();
+            previstar.Show();
+            this.Hide();
         }
     }
 }

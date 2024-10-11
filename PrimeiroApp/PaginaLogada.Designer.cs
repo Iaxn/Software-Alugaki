@@ -43,7 +43,7 @@
             pictureBox7 = new PictureBox();
             button3 = new Button();
             pictureBox6 = new PictureBox();
-            btrevisaraluguel = new Button();
+            button1 = new Button();
             panel1 = new Panel();
             pictureBox8 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -73,7 +73,7 @@
             btcadastraraluguel.FlatStyle = FlatStyle.Flat;
             btcadastraraluguel.Font = new Font("Poppins Light", 11F);
             btcadastraraluguel.ForeColor = Color.White;
-            btcadastraraluguel.Location = new Point(3, 338);
+            btcadastraraluguel.Location = new Point(3, 396);
             btcadastraraluguel.Name = "btcadastraraluguel";
             btcadastraraluguel.Size = new Size(200, 41);
             btcadastraraluguel.TabIndex = 24;
@@ -109,7 +109,7 @@
             // 
             pictureBox2.BackColor = Color.FromArgb(6, 33, 74);
             pictureBox2.Cursor = Cursors.Hand;
-            pictureBox2.Location = new Point(3, 523);
+            pictureBox2.Location = new Point(3, 534);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(18, 29);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -122,7 +122,7 @@
             pictureBox3.BackColor = Color.FromArgb(6, 33, 74);
             pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(3, 558);
+            pictureBox3.Location = new Point(3, 569);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(20, 29);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -148,11 +148,11 @@
             lbidentificador.BackColor = Color.FromArgb(6, 33, 74);
             lbidentificador.Font = new Font("Montserrat SemiBold", 7F, FontStyle.Bold);
             lbidentificador.ForeColor = Color.White;
-            lbidentificador.Location = new Point(696, 62);
+            lbidentificador.Location = new Point(668, 62);
             lbidentificador.Name = "lbidentificador";
-            lbidentificador.Size = new Size(35, 14);
+            lbidentificador.Size = new Size(30, 14);
             lbidentificador.TabIndex = 26;
-            lbidentificador.Text = "User: ";
+            lbidentificador.Text = "User";
             lbidentificador.Click += label1_Click;
             // 
             // sidebar
@@ -163,8 +163,8 @@
             sidebar.Controls.Add(pictureBox7);
             sidebar.Controls.Add(button3);
             sidebar.Controls.Add(pictureBox6);
+            sidebar.Controls.Add(button1);
             sidebar.Controls.Add(btcadastraraluguel);
-            sidebar.Controls.Add(btrevisaraluguel);
             sidebar.Controls.Add(panel1);
             sidebar.Controls.Add(pictureBox2);
             sidebar.Controls.Add(pictureBox3);
@@ -228,7 +228,7 @@
             button3.ForeColor = Color.White;
             button3.Location = new Point(3, 242);
             button3.Name = "button3";
-            button3.Size = new Size(193, 40);
+            button3.Size = new Size(188, 40);
             button3.TabIndex = 25;
             button3.Text = "Página Inicial";
             button3.UseVisualStyleBackColor = false;
@@ -240,31 +240,31 @@
             pictureBox6.Cursor = Cursors.Hand;
             pictureBox6.Location = new Point(3, 288);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(188, 44);
+            pictureBox6.Size = new Size(188, 54);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 29;
             pictureBox6.TabStop = false;
             pictureBox6.Click += pictureBox2_Click_1;
             // 
-            // btrevisaraluguel
+            // button1
             // 
-            btrevisaraluguel.BackColor = Color.FromArgb(6, 30, 74);
-            btrevisaraluguel.Cursor = Cursors.Hand;
-            btrevisaraluguel.FlatAppearance.BorderSize = 0;
-            btrevisaraluguel.FlatStyle = FlatStyle.Flat;
-            btrevisaraluguel.Font = new Font("Poppins Light", 11F);
-            btrevisaraluguel.ForeColor = Color.White;
-            btrevisaraluguel.Location = new Point(3, 385);
-            btrevisaraluguel.Name = "btrevisaraluguel";
-            btrevisaraluguel.Size = new Size(193, 41);
-            btrevisaraluguel.TabIndex = 24;
-            btrevisaraluguel.Text = "Revisar Aluguéis";
-            btrevisaraluguel.UseVisualStyleBackColor = false;
-            btrevisaraluguel.Click += button1_Click;
+            button1.BackColor = Color.FromArgb(6, 30, 74);
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Poppins Light", 11F);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(3, 348);
+            button1.Name = "button1";
+            button1.Size = new Size(186, 42);
+            button1.TabIndex = 33;
+            button1.Text = "Revisar Aluguéis";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // panel1
             // 
-            panel1.Location = new Point(3, 432);
+            panel1.Location = new Point(3, 443);
             panel1.Name = "panel1";
             panel1.Size = new Size(193, 85);
             panel1.TabIndex = 31;
@@ -274,9 +274,9 @@
             // 
             pictureBox8.BackColor = Color.FromArgb(6, 33, 74);
             pictureBox8.Cursor = Cursors.Hand;
-            pictureBox8.Location = new Point(3, 593);
+            pictureBox8.Location = new Point(3, 604);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(97, 29);
+            pictureBox8.Size = new Size(109, 29);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 29;
             pictureBox8.TabStop = false;
@@ -287,7 +287,7 @@
             pictureBox4.BackColor = Color.FromArgb(6, 33, 74);
             pictureBox4.Cursor = Cursors.Hand;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(3, 628);
+            pictureBox4.Location = new Point(3, 639);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(22, 29);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -399,7 +399,6 @@
         private System.Windows.Forms.Timer sideBarTimer;
         private FlowLayoutPanel sidebar;
         private PictureBox pictureBox5;
-        private Button btrevisaraluguel;
         private PictureBox pictureBox6;
         private Label lbmenu;
         private PictureBox pictureBox7;
@@ -409,5 +408,6 @@
         private PictureBox pictureBox9;
         private PictureBox pictureBox11;
         public Label lbWelcome;
+        private Button button1;
     }
 }

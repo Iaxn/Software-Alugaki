@@ -78,7 +78,7 @@ namespace PrimeiroApp
        string.IsNullOrWhiteSpace(txtPreco.Text))
             {
                 MessageBox.Show("Por favor, preencha todos os campos obrigatórios.", "Campos Obrigatórios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; 
+                return;
             }
 
 
@@ -90,13 +90,13 @@ namespace PrimeiroApp
 
                 SqlCommand cmd = new SqlCommand(insertQuery, con);
 
-                cmd.Parameters.AddWithValue("@username", SessaoUsuario.IdUsuario); 
+                cmd.Parameters.AddWithValue("@username", SessaoUsuario.IdUsuario);
                 cmd.Parameters.AddWithValue("@nomeCliente", txtNomeCliente.Text);
                 cmd.Parameters.AddWithValue("@telefoneCliente", txtTelefoneCliente.Text);
                 cmd.Parameters.AddWithValue("@conteudo", txtConteudo.Text);
                 cmd.Parameters.AddWithValue("@tempoConteudo", txtTempoConteudo.Text);
                 cmd.Parameters.AddWithValue("@preco", decimal.TryParse(txtPreco.Text, out decimal preco) ? preco : 0);
-                cmd.Parameters.AddWithValue("@cpf", txtCPF.Text); 
+                cmd.Parameters.AddWithValue("@cpf", txtCPF.Text);
 
                 try
                 {
@@ -108,6 +108,13 @@ namespace PrimeiroApp
                     MessageBox.Show("Erro ao cadastrar o aluguel: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void btrevisaraluguel_Click(object sender, EventArgs e)
+        {
+            PaginaRevisar pagrev = new PaginaRevisar();
+            pagrev.Show();
+            this.Hide();
         }
     }
 }
