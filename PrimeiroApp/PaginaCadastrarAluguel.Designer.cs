@@ -221,6 +221,7 @@
             Controls.Add(button3);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "PaginaCadastrarAluguel";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PaginaCadastrarAluguel";

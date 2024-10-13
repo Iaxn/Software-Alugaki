@@ -40,10 +40,11 @@
             sidebar = new FlowLayoutPanel();
             pictureBox5 = new PictureBox();
             lbmenu = new Label();
-            pictureBox7 = new PictureBox();
             button3 = new Button();
             pictureBox6 = new PictureBox();
+            button2 = new Button();
             button1 = new Button();
+            pictureBox7 = new PictureBox();
             panel1 = new Panel();
             pictureBox8 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -57,8 +58,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
@@ -73,7 +74,7 @@
             btcadastraraluguel.FlatStyle = FlatStyle.Flat;
             btcadastraraluguel.Font = new Font("Poppins Light", 11F);
             btcadastraraluguel.ForeColor = Color.White;
-            btcadastraraluguel.Location = new Point(3, 396);
+            btcadastraraluguel.Location = new Point(3, 309);
             btcadastraraluguel.Name = "btcadastraraluguel";
             btcadastraraluguel.Size = new Size(200, 41);
             btcadastraraluguel.TabIndex = 24;
@@ -109,7 +110,7 @@
             // 
             pictureBox2.BackColor = Color.FromArgb(6, 33, 74);
             pictureBox2.Cursor = Cursors.Hand;
-            pictureBox2.Location = new Point(3, 534);
+            pictureBox2.Location = new Point(3, 526);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(18, 29);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -122,7 +123,7 @@
             pictureBox3.BackColor = Color.FromArgb(6, 33, 74);
             pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(3, 569);
+            pictureBox3.Location = new Point(3, 561);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(20, 29);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -160,11 +161,12 @@
             sidebar.BackColor = Color.FromArgb(6, 33, 74);
             sidebar.Controls.Add(pictureBox5);
             sidebar.Controls.Add(lbmenu);
-            sidebar.Controls.Add(pictureBox7);
             sidebar.Controls.Add(button3);
             sidebar.Controls.Add(pictureBox6);
-            sidebar.Controls.Add(button1);
             sidebar.Controls.Add(btcadastraraluguel);
+            sidebar.Controls.Add(button2);
+            sidebar.Controls.Add(button1);
+            sidebar.Controls.Add(pictureBox7);
             sidebar.Controls.Add(panel1);
             sidebar.Controls.Add(pictureBox2);
             sidebar.Controls.Add(pictureBox3);
@@ -206,18 +208,6 @@
             lbmenu.Text = "MENU";
             lbmenu.Click += label2_Click_1;
             // 
-            // pictureBox7
-            // 
-            pictureBox7.BackColor = Color.FromArgb(6, 33, 74);
-            pictureBox7.Cursor = Cursors.Hand;
-            pictureBox7.Location = new Point(3, 207);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(188, 29);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 29;
-            pictureBox7.TabStop = false;
-            pictureBox7.Click += pictureBox2_Click_1;
-            // 
             // button3
             // 
             button3.BackColor = Color.FromArgb(6, 33, 74);
@@ -226,7 +216,7 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Poppins Light", 11F);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(3, 242);
+            button3.Location = new Point(3, 207);
             button3.Name = "button3";
             button3.Size = new Size(188, 40);
             button3.TabIndex = 25;
@@ -238,13 +228,29 @@
             // 
             pictureBox6.BackColor = Color.FromArgb(6, 33, 74);
             pictureBox6.Cursor = Cursors.Hand;
-            pictureBox6.Location = new Point(3, 288);
+            pictureBox6.Location = new Point(3, 253);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(188, 54);
+            pictureBox6.Size = new Size(188, 50);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 29;
             pictureBox6.TabStop = false;
             pictureBox6.Click += pictureBox2_Click_1;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(6, 30, 74);
+            button2.Cursor = Cursors.Hand;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Poppins Light", 11F);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(3, 356);
+            button2.Name = "button2";
+            button2.Size = new Size(193, 40);
+            button2.TabIndex = 34;
+            button2.Text = "Remover Aluguel";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click_1;
             // 
             // button1
             // 
@@ -254,7 +260,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Poppins Light", 11F);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(3, 348);
+            button1.Location = new Point(3, 402);
             button1.Name = "button1";
             button1.Size = new Size(186, 42);
             button1.TabIndex = 33;
@@ -262,11 +268,23 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click_1;
             // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.FromArgb(6, 33, 74);
+            pictureBox7.Cursor = Cursors.Hand;
+            pictureBox7.Location = new Point(3, 450);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(188, 29);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 29;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox2_Click_1;
+            // 
             // panel1
             // 
-            panel1.Location = new Point(3, 443);
+            panel1.Location = new Point(3, 485);
             panel1.Name = "panel1";
-            panel1.Size = new Size(193, 85);
+            panel1.Size = new Size(193, 35);
             panel1.TabIndex = 31;
             panel1.Paint += panel1_Paint;
             // 
@@ -274,7 +292,7 @@
             // 
             pictureBox8.BackColor = Color.FromArgb(6, 33, 74);
             pictureBox8.Cursor = Cursors.Hand;
-            pictureBox8.Location = new Point(3, 604);
+            pictureBox8.Location = new Point(3, 596);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(109, 29);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
@@ -287,7 +305,7 @@
             pictureBox4.BackColor = Color.FromArgb(6, 33, 74);
             pictureBox4.Cursor = Cursors.Hand;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(3, 639);
+            pictureBox4.Location = new Point(3, 631);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(22, 29);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -376,8 +394,8 @@
             sidebar.ResumeLayout(false);
             sidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
@@ -409,5 +427,6 @@
         private PictureBox pictureBox11;
         public Label lbWelcome;
         private Button button1;
+        private Button button2;
     }
 }

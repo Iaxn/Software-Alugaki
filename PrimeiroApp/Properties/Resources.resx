@@ -127,11 +127,17 @@
   <data name="botao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CadastrodeCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CadastrodeCliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lista dos alugueis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lista dos alugueis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-ivan-samkov-8962221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-ivan-samkov-8962221.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cadastro tela" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cadastro tela.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CadastrodeCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CadastrodeCliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PAGINA LOGADA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PAGINA LOGADA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,9 +148,6 @@
   <data name="vecteezy_texting-online-conversation-messaging-chatting_8826726" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vecteezy_texting-online-conversation-messaging-chatting_8826726.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="lock-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lock-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,8 +157,8 @@
   <data name="Tela login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tela login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pexels-ivan-samkov-8962221" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pexels-ivan-samkov-8962221.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2040504" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2040504.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,7 +172,7 @@
   <data name="pngtree-information-technology-set-orange-yellow-png-image_6660745" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-information-technology-set-orange-yellow-png-image_6660745.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lista dos alugueis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lista dos alugueis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="excluir aluguel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\excluir aluguel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

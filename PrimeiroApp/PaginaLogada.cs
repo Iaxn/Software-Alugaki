@@ -89,7 +89,7 @@ namespace PrimeiroApp
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
-           
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -115,7 +115,7 @@ namespace PrimeiroApp
 
                 if (sidebar.Width == sidebar.MinimumSize.Width)
                 {
-                    
+
 
                     sideBarExpand = false;
                     sideBarTimer.Stop();
@@ -161,7 +161,7 @@ namespace PrimeiroApp
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            
+
 
         }
 
@@ -185,6 +185,13 @@ namespace PrimeiroApp
         {
             PaginaRevisar previstar = new PaginaRevisar();
             previstar.Show();
+            this.Hide();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            PaginaRemover premover = new PaginaRemover();
+            premover.Show();
             this.Hide();
         }
     }

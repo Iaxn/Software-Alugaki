@@ -35,9 +35,9 @@ namespace PrimeiroApp
                     {
                         while (reader.Read())
                         {
-                            
+
                             string registro = $"{reader["NomeCliente"]} ; {reader["TelefoneCliente"]} ; {reader["Conteudo"]} ; {reader["TempoConteudo"]} ; {reader["Preco"]}";
-                            cbAlugueis.Items.Add(registro); 
+                            cbAlugueis.Items.Add(registro);
                         }
                     }
                 }
@@ -54,7 +54,7 @@ namespace PrimeiroApp
         private void btexcluircad_Click(object sender, EventArgs e)
         {
 
-            
+
         }
 
 
@@ -96,6 +96,30 @@ namespace PrimeiroApp
             {
                 MessageBox.Show("Selecione um cadastro para excluir.");
             }
+        }
+
+        private void sidebar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbmenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PaginaLogada pagPrincipal = new PaginaLogada();
+            pagPrincipal.Show();
+            this.Hide();
+        }
+
+        private void btrevisaraluguel_Click(object sender, EventArgs e)
+        {
+            PaginaRevisar pagRev = new PaginaRevisar();
+            pagRev.Show();
+            this.Hide();
         }
     }
 }
