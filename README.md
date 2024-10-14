@@ -87,3 +87,4 @@ private void CadastrarAluguel()
 
 ## 📝 Observações
 -  Projeto pessoal criado para estudo.
+-  Primeiro software que desenvolvi.
