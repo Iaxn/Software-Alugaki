@@ -121,5 +121,19 @@ namespace PrimeiroApp
             pagRev.Show();
             this.Hide();
         }
+
+        private void btcadastrarAluguel_Click(object sender, EventArgs e)
+        {
+            PaginaCadastrarAluguel pagCad = new PaginaCadastrarAluguel();
+            pagCad.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            SessaoUsuario.LimparSessao();
+            new PaginaLogin().Show();
+            this.Hide();
+        }
     }
 }

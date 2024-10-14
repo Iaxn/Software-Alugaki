@@ -34,7 +34,6 @@
             lbWelcome = new Label();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
             label1 = new Label();
             lbidentificador = new Label();
             sidebar = new FlowLayoutPanel();
@@ -55,7 +54,6 @@
             pictureBox11 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -118,18 +116,6 @@
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click_1;
             // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.FromArgb(6, 33, 74);
-            pictureBox3.Cursor = Cursors.Hand;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(3, 561);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(20, 29);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 29;
-            pictureBox3.TabStop = false;
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -169,7 +155,6 @@
             sidebar.Controls.Add(pictureBox7);
             sidebar.Controls.Add(panel1);
             sidebar.Controls.Add(pictureBox2);
-            sidebar.Controls.Add(pictureBox3);
             sidebar.Controls.Add(pictureBox8);
             sidebar.Controls.Add(pictureBox4);
             sidebar.Dock = DockStyle.Left;
@@ -292,9 +277,9 @@
             // 
             pictureBox8.BackColor = Color.FromArgb(6, 33, 74);
             pictureBox8.Cursor = Cursors.Hand;
-            pictureBox8.Location = new Point(3, 596);
+            pictureBox8.Location = new Point(3, 561);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(109, 29);
+            pictureBox8.Size = new Size(130, 29);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 29;
             pictureBox8.TabStop = false;
@@ -305,7 +290,7 @@
             pictureBox4.BackColor = Color.FromArgb(6, 33, 74);
             pictureBox4.Cursor = Cursors.Hand;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(3, 631);
+            pictureBox4.Location = new Point(3, 596);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(22, 29);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -356,6 +341,7 @@
             pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox9.TabIndex = 32;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += pictureBox9_Click;
             // 
             // pictureBox11
             // 
@@ -390,7 +376,6 @@
             Load += PaginaLogada_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             sidebar.ResumeLayout(false);
             sidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -408,7 +393,6 @@
         private Button btcadastraraluguel;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
         private Label label1;
         private Label lbidentificador;
         private Panel panel1;

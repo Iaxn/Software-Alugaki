@@ -31,9 +31,9 @@ namespace PrimeiroApp
             lbmenu.Visible = false;
             btcadastraraluguel.Visible = false;
             button1.Visible = false;
-            pictureBox3.Visible = false;
             pictureBox4.Visible = false;
             button3.Visible = false;
+            button2.Visible = false;
 
 
 
@@ -109,9 +109,9 @@ namespace PrimeiroApp
                 lbmenu.Visible = false;
                 btcadastraraluguel.Visible = false;
                 button1.Visible = false;
-                pictureBox3.Visible = false;
                 pictureBox4.Visible = false;
                 button3.Visible = false;
+                button2.Visible = false;
 
                 if (sidebar.Width == sidebar.MinimumSize.Width)
                 {
@@ -129,10 +129,11 @@ namespace PrimeiroApp
                 {
                     lbmenu.Visible = true;
                     button1.Visible = true;
-                    btcadastraraluguel.Visible = true;
-                    pictureBox3.Visible = true;
+                    btcadastraraluguel.Visible = true;              
                     pictureBox4.Visible = true;
                     button3.Visible = true;
+                    button2.Visible = true;
+
 
                     sideBarExpand = true;
                     sideBarTimer.Stop();
@@ -193,6 +194,11 @@ namespace PrimeiroApp
             PaginaRemover premover = new PaginaRemover();
             premover.Show();
             this.Hide();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

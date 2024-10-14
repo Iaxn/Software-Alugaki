@@ -32,7 +32,6 @@
             pictureBox1 = new PictureBox();
             button3 = new Button();
             btrevisaraluguel = new Button();
-            pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             txtNomeCliente = new TextBox();
             txtTelefoneCliente = new TextBox();
@@ -43,7 +42,6 @@
             label1 = new Label();
             label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -90,25 +88,12 @@
             btrevisaraluguel.UseVisualStyleBackColor = false;
             btrevisaraluguel.Click += btrevisaraluguel_Click;
             // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.FromArgb(5, 27, 60);
-            pictureBox3.Cursor = Cursors.Hand;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(104, 329);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(21, 26);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 30;
-            pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
-            // 
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.FromArgb(5, 27, 60);
             pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(17, 329);
+            pictureBox2.Location = new Point(102, 330);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(21, 26);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -216,7 +201,6 @@
             Controls.Add(txtTelefoneCliente);
             Controls.Add(txtNomeCliente);
             Controls.Add(pictureBox2);
-            Controls.Add(pictureBox3);
             Controls.Add(btrevisaraluguel);
             Controls.Add(button3);
             Controls.Add(pictureBox1);
@@ -226,7 +210,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PaginaCadastrarAluguel";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -237,7 +220,6 @@
         private PictureBox pictureBox1;
         private Button button3;
         private Button btrevisaraluguel;
-        private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private TextBox txtNomeCliente;
         private TextBox txtTelefoneCliente;

@@ -36,14 +36,12 @@
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
             btcadastraraluguel = new Button();
             button3 = new Button();
             tabelaClientes = new DataGridView();
             button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)tabelaClientes).BeginInit();
             SuspendLayout();
             // 
@@ -63,25 +61,13 @@
             pictureBox2.BackColor = Color.FromArgb(5, 27, 60);
             pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(25, 425);
+            pictureBox2.Location = new Point(91, 425);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(21, 26);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 33;
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.FromArgb(5, 27, 60);
-            pictureBox3.Cursor = Cursors.Hand;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(91, 425);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(21, 26);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 34;
-            pictureBox3.TabStop = false;
             // 
             // btcadastraraluguel
             // 
@@ -197,7 +183,6 @@
             Controls.Add(button1);
             Controls.Add(tabelaClientes);
             Controls.Add(pictureBox2);
-            Controls.Add(pictureBox3);
             Controls.Add(btcadastraraluguel);
             Controls.Add(button3);
             Controls.Add(pictureBox1);
@@ -209,7 +194,6 @@
             Load += PaginaRevisar_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)tabelaClientes).EndInit();
             ResumeLayout(false);
         }
@@ -218,7 +202,6 @@
 
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
         private Button btcadastraraluguel;
         private Button button3;
         private DataGridView tabelaClientes;
